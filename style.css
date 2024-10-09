@@ -1,0 +1,63 @@
+/* Färger
+Dessa färger används (utan någon inbördes ordning): #050505 (svart), #121212 (svart), #353535 (grå), #666666 (ljusgrå), #7f7f7f (ljusare gråO), #999999 (ljusljusgrå), #e5e5e5 (beige/vit), #f4f4f4 (vit typ)och #087fe7 (blå).
+Förbox-shadowhardessafärgeranvänts:rgba(0, 0, 0, 0.1)ochrgba(0, 0, 0, 0.2). 3
+Det är tillåtet att ta färgerna från skärmdumparna, även om det riskerar att inte bli exakt som de ovanstående.
+Typsnitt
+Typsnittet finner ni i mappen “material” (filen Inter.ttf) och det används på hela sidan. Följande typsnittstjocklekar har använts: 650, 550, 450, 400 och 320. Följande typsnittsstorlekar har använts (i pixlar): 53, 45, 36, 26, 24, 18, 15, 14, 13.5, 13 och 12*
+* När det kommer till de minsta typsnittsstorlekarna är det inte helt enkelt att få till exakt samma som vad vi har, detta är vi medvetna om, så gör så gott ni kan.*/
+
+
+@font-face {
+    font-family:'Inter';
+    src: url(material/Inter.ttf);
+}
+
+body {
+    font-family: Inter;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.brandimage {
+    width: 150px;
+}
+
+#request {
+    border-right: 1px solid #050505;
+    padding: 10px;
+}
+
+.barky-free {
+    color: white;
+    padding: 10px;
+    background-color: #050505;
+    border-radius: 10px;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
