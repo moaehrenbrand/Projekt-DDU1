@@ -6,7 +6,6 @@ Typsnitt
 Typsnittet finner ni i mappen “material” (filen Inter.ttf) och det används på hela sidan. Följande typsnittstjocklekar har använts: 650, 550, 450, 400 och 320. Följande typsnittsstorlekar har använts (i pixlar): 53, 45, 36, 26, 24, 18, 15, 14, 13.5, 13 och 12*
 * När det kommer till de minsta typsnittsstorlekarna är det inte helt enkelt att få till exakt samma som vad vi har, detta är vi medvetna om, så gör så gott ni kan.*/
 
-
 @font-face {
     font-family:'Inter';
     src: url(material/Inter.ttf);
@@ -14,6 +13,7 @@ Typsnittet finner ni i mappen “material” (filen Inter.ttf) och det används
 
 body {
     font-family: Inter;
+    line-height: 1.3;
     background-color: #f4f4f4;
 }
 
@@ -24,9 +24,23 @@ header {
     padding: 10px;
 }
 
-a {
+header a {
     text-decoration: none;
-    color: black;
+    color: #050505;
+}
+
+nav a:hover {
+    background-color: #e5e5e5;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #121212;
+    font-size: 15px;
+    display: inline-block;
+    padding: 5px;
 }
 
 nav {
@@ -41,13 +55,26 @@ nav {
     gap: 20px;
 }
 
-.brandimage {
-    width: 150px;
+#right a {
+    font-size: 15px;
+    display: inline-block;
+    padding: 5px;
 }
 
-#request {
-    border-right: 1px solid #050505;
-    padding: 10px;
+#right a:not(.no-hover):hover {
+    background-color: #e5e5e5;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#vertikal {
+    height: 20px;
+    width: 1px;
+    background-color: #050505;
+}
+
+.brandimage {
+    width: 100px;
 }
 
 .barky-free {
@@ -55,8 +82,11 @@ nav {
     padding: 10px;
     background-color: #050505;
     border-radius: 10px;
-    width: 130px;
+    width: 150px;
     text-align: center;
+    box-sizing: border-box;
+    display: inline-block;
+    text-decoration: none;
 }
 
 main {
@@ -67,6 +97,19 @@ main {
 #better {
     display: flex;
     margin: 100px auto;
+}
+
+#better-together h1 {
+    color: #121212;
+    font-size: 45px;
+    margin-bottom: 0;
+}
+
+#better-together p {
+    color: #7f7f7f;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 #better-together,
@@ -95,23 +138,35 @@ main {
 
 .dog-image {
     width: 1000px;
+    border-radius: 10px;
 }
 
 .face-image {
     width: 50px;
 }
 
+#faces h1 {
+    margin-bottom: 5px;
+    font-size: 36px;
+    color: #121212;
+}
+
 #faces p {
-    width: 400px;
+    width: 475px;
     margin-bottom: 50px;
+    color: #7f7f7f;
+    font-size: 16px;
+    margin-top: 0;
 }
 
 #faces h2 {
     text-align: center;
+    color: #999999 ;
+    font-size: 36px;
 }
 
 #faces {
-    margin: 100px auto;
+    margin: 75px auto;
 }
 
 .persons {
@@ -120,6 +175,17 @@ main {
     gap: 10px;
     justify-content: center;
     margin-bottom: 40px;
+}
+
+.names {
+    color: #121212;
+    font-size: 15px;
+}
+
+.jobs {
+    color: #999999;
+    font-size: 12px;
+    font-weight: normal;
 }
 
 #start {
@@ -134,6 +200,11 @@ main {
 
 #start h1 {
     margin-bottom: 0;
+}
+
+#start p {
+    color: #999999;
+    font-size: 17px;
 }
 
 #free-plan {
@@ -152,6 +223,7 @@ main {
     margin-top: 20px;
     border-radius: 10px;
     color: #7f7f7f;
+    font-size: 17px;
 }
 
 .rader {
@@ -169,3 +241,210 @@ main {
     color: #050505;
     font-weight: bold;
 }
+
+#everyteam {
+    margin: 100px auto;
+}
+
+#built-team h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #050505;
+}
+
+#built-team p {
+    margin: 5px;
+    color: #7f7f7f;
+}
+
+#built-team {
+    text-align: center;
+}
+
+#emojis {
+    display: flex;
+    flex-basis: 0;
+    flex-grow: 1;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#emojis p {
+    color: #7f7f7f;
+    font-size: 16px;
+}
+
+#emojis a {
+    text-decoration: underline;
+    font-size: 16px;
+    color: #050505;
+}
+
+#emojis a:hover {
+    color: #087fe7;
+}
+
+#product {
+    border-left: 1px solid #7f7f7f;
+    border-right: 1px solid #7f7f7f;
+    margin: 0 10px;
+    padding: 0 10px;
+}
+
+#teams {
+    margin: 100px auto;
+}
+
+#love {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 36px;
+    color: #050505;
+}
+
+#best h2 {
+    color: #050505;
+    font-size: 26px;
+    margin-bottom: 0;
+}
+
+#best p {
+    color: #353535;
+    font-size: 19px;
+    margin-top: 5px;
+}
+
+#best {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+    gap: 30px;
+}
+
+#badges {
+    width: 450px;
+}
+
+#g2 {
+    text-decoration: underline;
+}
+
+#procent {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    margin: 40px 0;
+}
+
+#procent h2 {
+    color: #7f7f7f;
+    font-size: 53px;
+    font-weight: bold;
+    margin: 0;
+}
+
+#procent p {
+    margin: 0;
+    color: #999999;
+    font-size: 15px;
+}
+
+#procent div {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.nittio {
+    border-left: 1px solid #999999;
+    border-right: 1px solid #999999;
+}
+
+.nittioett {
+    border-right: 1px solid #7f7f7f;
+}
+
+#barky-today {
+    text-align: center;
+}
+
+#barky-today h1 {
+    font-size: 40px;
+    color: #050505;
+    margin: 0;
+}
+
+#barky-today p {
+    color: #7f7f7f;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.shareimages {
+    width: 25px;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+#lastlist {
+    display: flex;
+    flex-direction: column;
+}
+
+#lastlist p {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: #050505;
+}
+
+.footnote {
+    font-size: 18px;
+}
+
+#sharecontainer {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#lista {
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+}
+
+#lista h1 {
+    font-size: 18px;
+}
+
+#lista a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #7f7f7f;
+    margin: 6px 0;
+}
+
+#lista a:hover {
+    text-decoration: underline;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+}
+
+.section h1 {
+    margin: 0;
+}
+
