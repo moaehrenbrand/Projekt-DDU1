@@ -316,7 +316,7 @@ main {
 #best p {
     color: #353535;
     font-size: 19px;
-    margin-top: 5px;
+    margin-top: 1px;
 }
 
 #best {
@@ -489,6 +489,12 @@ footer {
 
     #hamburger img {
         width: 30px;
+        padding: 10px;
+    }
+
+    #hamburger:hover {
+        background-color: #e5e5e5;
+        border-radius: 5px;
     }
 
     #better {
@@ -605,6 +611,4 @@ footer {
         padding: 0;
         margin-top: 20px;
     }
-
-    
 }
