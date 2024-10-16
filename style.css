@@ -1,11 +1,3 @@
-/* Färger
-Dessa färger används (utan någon inbördes ordning): #050505 (svart), #121212 (svart), #353535 (grå), #666666 (ljusgrå), #7f7f7f (ljusare gråO), #999999 (ljusljusgrå), #e5e5e5 (beige/vit), #f4f4f4 (vit typ)och #087fe7 (blå).
-Förbox-shadowhardessafärgeranvänts:rgba(0, 0, 0, 0.1)ochrgba(0, 0, 0, 0.2). 3
-Det är tillåtet att ta färgerna från skärmdumparna, även om det riskerar att inte bli exakt som de ovanstående.
-Typsnitt
-Typsnittet finner ni i mappen “material” (filen Inter.ttf) och det används på hela sidan. Följande typsnittstjocklekar har använts: 650, 550, 450, 400 och 320. Följande typsnittsstorlekar har använts (i pixlar): 53, 45, 36, 26, 24, 18, 15, 14, 13.5, 13 och 12*
-* När det kommer till de minsta typsnittsstorlekarna är det inte helt enkelt att få till exakt samma som vad vi har, detta är vi medvetna om, så gör så gott ni kan.*/
-
 @font-face {
     font-family:'Inter';
     src: url(material/Inter.ttf);
@@ -85,7 +77,7 @@ nav {
 }
 
 .brandimage {
-    width: 100px;
+    width: 150px;
 }
 
 .barky-free {
@@ -98,6 +90,7 @@ nav {
     box-sizing: border-box;
     display: inline-block;
     text-decoration: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 main {
@@ -150,6 +143,7 @@ main {
 .dog-image {
     width: 1000px;
     border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .face-image {
@@ -434,6 +428,10 @@ footer {
     width: 1000px;
 }
 
+.mobillista {
+    display: flex;
+}
+
 #lista h1 {
     font-size: 18px;
 }
@@ -459,3 +457,154 @@ footer {
     margin: 0;
 }
 
+#hamburger {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    body {
+        max-width: 600px;
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
+    
+    header {
+        position: static;
+        border-bottom: none;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    #right {
+        display: none;
+    }
+
+    #hamburger {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    #hamburger img {
+        width: 30px;
+    }
+
+    #better {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    #hero {
+        width: 500px;
+    }
+
+    #faces {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dog-image {
+        width: 550px;
+    }
+
+    #faces h2 {
+        font-size: 20px;
+        width: 550px;
+    }
+
+    #list {
+        width: 500px;
+    }
+
+    #built-team {
+        text-align: center;
+    }
+
+    #emojis {
+        flex-direction: column;
+        width: 500px;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    #product {
+        border-left: none;
+        border-right: none;
+    }
+
+    #love {
+        margin-bottom: 20px;
+    }
+
+    #best {
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 0;
+    }
+
+    #best p {
+        font-size: 18px;
+    }
+
+    #badges {
+        align-items: center;
+        justify-content: center;
+        width: 550px;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    #procent {
+        flex-direction: column;
+    }
+
+    .nittio {
+        border-left: none;
+        border-right: none;
+    }
+
+    .nittioett {
+        border-right: none;
+    }
+
+    footer {
+        flex-direction: column;
+        width: 600px;
+        margin: 100px auto;
+        box-sizing: border-box;
+    }
+
+    #lastlist p {
+        margin-top: 5px;
+    }
+
+    #lastlist {
+        margin-left: 20px;
+    }
+
+    #lista {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        width: 600px;
+    }
+
+    .mobillista {
+        max-width: 600px;
+        justify-content: space-between;
+        margin-right: 150px;
+    }
+
+    .section {
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    
+}
