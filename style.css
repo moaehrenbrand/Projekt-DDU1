@@ -567,12 +567,28 @@ footer {
         text-align: center;
     }
 
+    #built-team p {
+        margin-bottom: 20px;
+    }
+
     #emojis {
         flex-direction: column;
         width: 500px;
         align-items: center;
         justify-content: center;
         margin: 0 auto;
+    }
+
+    #emojis div {
+        margin-bottom: 20px;
+    }
+
+    #emojis p {
+        width: 520px;
+    }
+
+    .learn-more a {
+        margin-bottom: 30px;
     }
 
     #product {
