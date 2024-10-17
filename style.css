@@ -20,6 +20,7 @@ header {
     justify-content: space-between;
     padding: 15px;
     box-sizing: border-box;
+    background-color: white;
 }
 
 header a {
@@ -81,7 +82,7 @@ nav {
     color: white;
     padding: 7px;
     background-color: #050505;
-    border-radius: 10px;
+    border-radius: 5px;
     width: 150px;
     text-align: center;
     box-sizing: border-box;
@@ -522,17 +523,44 @@ footer {
         align-items: center;
     }
 
+    #faces p {
+        width: 500px;
+        margin-top: 10px;
+        line-height: 1.5;
+    }
+
     .dog-image {
         width: 550px;
     }
 
     #faces h2 {
-        font-size: 20px;
-        width: 550px;
+        font-size: 29px;
+        width: 575px;
+        margin-top: 40px;
+        margin-bottom: 0;
     }
+
+   .names {
+        text-align: start;
+   }
 
     #list {
         width: 500px;
+        margin-top: 50px;
+    }
+
+    #start h1 {
+        font-size: 36px;
+    }
+
+    #start p {
+        width: 520px;
+        line-height: 1.5;
+        font-size: 18px;
+    }
+
+    #barkyteams {
+        font-weight: 500;
     }
 
     #built-team {
