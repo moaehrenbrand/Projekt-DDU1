@@ -156,11 +156,12 @@ main {
 }
 
 #faces p {
-    width: 475px;
+    width: 480px;
     margin-bottom: 50px;
     color: #7f7f7f;
     font-size: 16px;
     margin-top: 0;
+    line-height: 1.5;
 }
 
 #faces h2 {
@@ -209,6 +210,7 @@ main {
 #start p {
     color: #999999;
     font-size: 17px;
+    line-height: 1.5;
 }
 
 #free-plan {
@@ -267,15 +269,25 @@ main {
 
 #emojis {
     display: flex;
-    flex-basis: 0;
-    flex-grow: 1;
     text-align: center;
     margin-top: 30px;
 }
 
 #emojis p {
+    padding: 10px;
+}
+
+.two {
     color: #7f7f7f;
-    font-size: 16px;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.one {
+    color: #7f7f7f;
+    font-size: 17px;
+    line-height: 1.5;
+    width: 300px;
 }
 
 #emojis a {
@@ -316,6 +328,7 @@ main {
     color: #353535;
     font-size: 19px;
     margin-top: 1px;
+    line-height: 1.5;
 }
 
 #best {
@@ -381,8 +394,9 @@ main {
 
 #barky-today p {
     color: #7f7f7f;
-    font-size: 16px;
-    margin-top: 5px;
+    font-size: 17px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .shareimages {
@@ -433,6 +447,7 @@ footer {
 
 #lista h1 {
     font-size: 18px;
+    margin-bottom: 10px;
 }
 
 #lista a {
@@ -450,6 +465,7 @@ footer {
     display: flex;
     flex-direction: column;
     padding: 0 50px;
+    flex-basis: 30%;
 }
 
 .section h1 {
