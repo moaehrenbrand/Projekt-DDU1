@@ -341,7 +341,7 @@ main {
 }
 
 #procent h2 {
-    color: #7f7f7f;
+    color: #666666;
     font-size: 53px;
     font-weight: bold;
     margin: 0;
@@ -607,8 +607,13 @@ footer {
         margin-top: 0;
     }
 
+    #best h2 {
+        margin-bottom: 10px;
+    }
+
     #best p {
-        font-size: 18px;
+        font-size: 17px;
+        width: 550px;
     }
 
     #badges {
@@ -641,7 +646,12 @@ footer {
 
     #lastlist p {
         margin-top: 5px;
+        font-size: 14px;
     }
+
+   .copyright {
+    font-size: 15px;
+   }
 
     #lastlist {
         margin-left: 20px;
