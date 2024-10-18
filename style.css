@@ -112,6 +112,7 @@ main {
     font-size: 18px;
     margin-top: 10px;
     margin-bottom: 20px;
+    width: 450px;
 }
 
 #better-together,
@@ -651,6 +652,7 @@ footer {
 
    .copyright {
     font-size: 15px;
+    margin-bottom: 15px;
    }
 
     #lastlist {
@@ -673,5 +675,9 @@ footer {
     .section {
         padding: 0;
         margin-top: 20px;
+    }
+
+    .section h1 {
+        margin-bottom: 7px;
     }
 }
