@@ -5,6 +5,7 @@
 
 body {
     font-family: Inter;
+    margin: 0 auto;
 }
 
 header {
@@ -13,13 +14,9 @@ header {
     left: 0;
     right: 0;
     z-index: 1000;
-    border-bottom: 1px solid #050505;
-    width: 100%;
+    border-bottom: 1px solid  #e5e5e5;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 15px;
-    box-sizing: border-box;
     background-color: white;
 }
 
@@ -89,6 +86,16 @@ nav {
     display: inline-block;
     text-decoration: none;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#border {
+    border-bottom: 1px solid  #e5e5e5;
+}
+
+#border1 {
+    border-bottom: 1px solid  #e5e5e5;
+    max-width: none;
+    margin: 10px;
 }
 
 main {
@@ -177,8 +184,8 @@ main {
 .persons {
     display: flex;
     align-items: center;
-    gap: 10px;
     justify-content: center;
+    gap: 5px;
     margin-bottom: 40px;
 }
 
@@ -407,13 +414,15 @@ main {
 
 footer {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
     max-width: 1200px;
     margin: 100px auto;
-    box-sizing: border-box;
     padding: 10px;
 }
+
+.copyright {
+    font-size: 15px;
+    margin-bottom: 15px;
+   }
 
 #lastlist {
     display: flex;
@@ -452,10 +461,6 @@ footer {
     margin-bottom: 30px;
     font-size: 18px;
     color: #050505;
-}
-
-.footnote {
-    font-size: 18px;
 }
 
 #sharecontainer {
@@ -670,13 +675,8 @@ footer {
 
     #lastlist p {
         margin-top: 5px;
-        font-size: 14px;
+        font-size: 15px;
     }
-
-   .copyright {
-    font-size: 15px;
-    margin-bottom: 15px;
-   }
 
     #lastlist {
         margin-left: 20px;
